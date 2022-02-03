@@ -13,3 +13,4 @@ echo \
 apt-get update
 apt-get -y install docker-ce docker-ce-cli containerd.io
 docker run hello-world
+apt -y install docker-compose
