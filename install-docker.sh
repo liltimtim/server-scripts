@@ -1,7 +1,7 @@
 #!/bin/bash
 
-apt-get update
-apt-get -y install \
+sudo apt-get update
+sudo apt-get -y install \
     ca-certificates \
     curl \
     gnupg \
@@ -10,7 +10,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-apt-get update
-apt-get -y install docker-ce docker-ce-cli containerd.io
+sudo apt-get update
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 docker run hello-world
-apt -y install docker-compose
+sudo apt -y install docker-compose
