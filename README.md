@@ -5,5 +5,5 @@ Just a collection of useful bootstrapping server scripts in bash
 run the following command
 
 ```shell
-apt-get update -y && apt install git && git clone https://github.com/liltimtim/server-scripts.git && cd server-scripts && sh install-docker.sh
+apt-get update -y && apt install git -y && git clone https://github.com/liltimtim/server-scripts.git && cd server-scripts && sh install-docker.sh
 ```
